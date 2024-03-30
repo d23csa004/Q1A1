@@ -1,0 +1,28 @@
+From d507d11358615a026066f1593873df417e616932 Mon Sep 17 00:00:00 2001
+From: d23csa004 <d23csa004@iitj.ac.in>
+Date: Sat, 30 Mar 2024 22:44:24 +0530
+Subject: [PATCH] changes in arch
+
+---
+ d23csa004_dlops_assignment1_q1.py | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/d23csa004_dlops_assignment1_q1.py b/d23csa004_dlops_assignment1_q1.py
+index f0662cc..0507f9b 100644
+--- a/d23csa004_dlops_assignment1_q1.py
++++ b/d23csa004_dlops_assignment1_q1.py
+@@ -22,9 +22,9 @@ class MLP(nn.Module):
+     def __init__(self):
+         super(MLP, self).__init__()
+         self.layers = nn.Sequential(
+-            nn.Linear(4, 5),
++            nn.Linear(4, 15),
+             nn.ReLU(),
+-            nn.Linear(5, 7),
++            nn.Linear(15, 7),
+             nn.ReLU(),
+             nn.Linear(7, 3)
+         )
+-- 
+2.34.1
+
